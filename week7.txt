@@ -1,0 +1,17 @@
+@relation student
+@attribute Age {<=25,30-40,>40}
+@attribute Income {Low,Medium,High}
+@attribute Student {Yes,No}
+@attribute CreditcardRating {Poor,Fair,Excellent}
+@attribute Computer {Yes,No}
+@data
+<=25,Medium,Yes,Excellent,Yes
+>40,Medium,No,Fair,Yes
+30-40,Low,Yes,Fair,No
+>40,Low,Yes,Excellent,No
+<=25,High,Yes,Fair,No
+>40,Low,Yes,Fair,No
+30-40,Medium,Yes,Poor,Yes
+<=25,Low,Yes,Fair,No
+30-40,High,No,Poor,Yes
+>40,Low,Yes,Excellent,No

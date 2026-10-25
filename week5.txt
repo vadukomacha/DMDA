@@ -1,0 +1,17 @@
+@relation employee9
+@attribute Gender{Male,Female}
+@attribute Age{Young, Middle, Senior}
+@attribute Experience{Low, Medium, High}
+@attribute Salary{Low, High}
+@attribute Promotion{Yes, No}
+@data
+Male,Young,Low,High,No
+Female,Senior,Medium,Low,Yes
+Female,Middle,Low,High,Yes
+Male,Middle,Medium,Low,Yes
+Female,Young,High,High,No
+Male,Middle,Low,High,No
+Male,Senior,Low,Low,No
+Female,Middle,Low,Low,Yes
+Male,Middle,Low,High,No
+Female,Young,Medium,High,No

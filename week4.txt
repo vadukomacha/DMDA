@@ -1,0 +1,18 @@
+@relation employee
+@attribute Age{Young, Middle, Senior}
+@attribute Dept{IT, HR, Manager, Salesman}
+@attribute Salary{Low, Medium, High}
+@attribute Experience{Low, Medium, High}
+@attribute Attendance{Poor, Avg, Good}
+@attribute Performance{Poor, Avg, Good}
+@data
+Young, Manager, Low, Medium, Good, Avg
+Middle, HR, High, Low, Poor, Avg
+Senior, IT, Low, High, Avg, Poor
+Middle, Salesman, Medium, Medium, Poor, Avg
+Young, IT, High, Low, Good, Avg
+Middle, HR, Low, High, Good, Good
+Senior, Manager, High, Low, Poor, Avg
+Young, Salesman, Low, High, Poor, Good
+Senior, Manager, High, Medium, Good, Avg
+Middle, IT, Medium, Low, Avg, Poor
