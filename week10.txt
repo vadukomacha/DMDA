@@ -1,4 +1,4 @@
-Time Series:
+# Time Series:
 
 sales <- c(100,200,300,400,500,600,700,800,900,1000,1100,1200)
 sales_ts <- ts(sales, start = c(2025,1), frequency = 12)
@@ -6,7 +6,7 @@ print(sales_ts)
 plot(sales_ts, type = "o", main = "time series analysis", xlab = "months", ylab = "sales", lwd = 3)
 
 
-Nonlinear least square analysis:
+# Nonlinear least square analysis:
 
 year = c(1,2,3,4,5,6)
 population = c(100,110,125,140,160,185)
@@ -18,3 +18,17 @@ plot(year, population, pch = 19, main = "population growth-non linear regression
 lines(year, predicted, lwd = 2)
 new_year = data.frame(year = 8)
 predicted_8 = predict(model, newdata = new_year)
+
+
+# Decision Tree:
+
+if (!require(rpart))
+  install.packages("rpart")
+if (!require(rpart.plot))
+  install.packages("rpart.plot")
+library(rpart)
+library(rpart.plot)
+data(mtcars)
+reg_tree = rpart(mpg ~ hp + wt, method = "anova", data = mtcars)
+rpart.plot(reg_tree, type = 2, digits = 3, fallen.leaves = TRUE,
+           main = "R Decision Tree")
