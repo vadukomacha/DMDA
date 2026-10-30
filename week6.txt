@@ -1,11 +1,21 @@
-@RELATION iris
+ ===== WEEK 6: CLUSTERING — SIMPLE K-MEANS =====
 
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week6.txt
+ Step 2: Click "Cluster" tab
+ Step 3: Choose → SimpleKMeans → click Start
+ Step 4: (If needed) Click "SimpleKMeans" text → change numClusters (try 3 for iris) → OK → Start again
+
+ Note: Iris has 3 species so numClusters=3 is logical.
+       Output shows cluster centroids and how many instances per cluster.
+       Use "Use training set" as cluster mode.
+
+
+@RELATION iris
 @ATTRIBUTE sepallength REAL
 @ATTRIBUTE sepalwidth REAL
 @ATTRIBUTE petallength REAL
 @ATTRIBUTE petalwidth REAL
 @ATTRIBUTE class {Iris-setosa,Iris-versicolor,Iris-virginica}
-
 @DATA
 5.1,3.5,1.4,0.2,Iris-setosa
 4.9,3.0,1.4,0.2,Iris-setosa
