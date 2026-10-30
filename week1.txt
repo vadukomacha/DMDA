@@ -1,0 +1,19 @@
+@relation student 
+@attribute SID,numeric
+@attribute age,numeric
+@attribute gender,string
+@attribute studyhrs,numeric
+@attribute attendance,numeric
+@attribute marks,numeric
+@attribute result,string
+@data
+1,12,male,10,65,45,fail
+2,23,female,3,76,80,pass
+3,8,male,4,60,80,pass
+4,?,female,3,96,30,fail
+5,12,?,3,66,86,pass
+6,13,female,12,96,100,pass
+7,13,female,4,86,80,pass
+8,23,female,?,76,80,pass
+9,24,male,3,32,40,pass
+10,29,male,4,76,20,?
