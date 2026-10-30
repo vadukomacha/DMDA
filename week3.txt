@@ -1,11 +1,25 @@
-@relation contact-lenses
+ ===== WEEK 3: ASSOCIATION RULES — FP-GROWTH (BINARY CONVERSION) =====
 
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week3.txt
+ Step 2: Filter → Choose → unsupervised → attribute → NominalToBinary → Apply
+ Step 3: Set Class dropdown to "No class"
+ Step 4: Filter → Choose → unsupervised → attribute → NominalToBinary → Apply (2nd time)
+ Step 5: Filter → Choose → unsupervised → attribute → NumericToBinary → Apply
+ Step 6: Set Class dropdown back to the class attribute (contact-lenses)
+ Step 7: Filter → Choose → unsupervised → attribute → NumericToBinary → Apply (2nd time)
+ Step 8: Click "Associate" tab → Choose → FPGrowth → click Start
+ Step 9: (If needed) Click "FPGrowth" text → change lowerBoundMinSupport & minMetric → OK → Start again
+
+ Note: FP-Growth needs binary (0/1) attributes, so we convert nominal→binary then numeric→binary.
+       After conversion, attributes become like age=young_binarized=1_binarized with 0/1 values.
+
+
+@relation contact-lenses
 @attribute age {young, pre-presbyopic, presbyopic}
 @attribute spectacle-prescrip {myope, hypermetrope}
 @attribute astigmatism {no, yes}
 @attribute tear-prod-rate {reduced, normal}
 @attribute contact-lenses {soft, hard, none}
-
 @data
 young,myope,no,reduced,none
 young,myope,no,normal,soft
