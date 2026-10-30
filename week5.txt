@@ -1,3 +1,15 @@
+ ===== WEEK 5: CLASSIFICATION — NAIVE BAYES =====
+
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week5.txt
+ Step 2: Click "Classify" tab
+ Step 3: Choose → classifiers → bayes → NaiveBayes → click Start
+ Step 4: Read output: conditional probabilities, accuracy %, confusion matrix
+
+ Note: Class attribute is Promotion (Yes/No).
+       Test option: Cross-validation (10 folds) is default.
+       Confusion matrix: rows = actual class, columns = predicted class.
+
+
 @relation employee9
 @attribute Gender{Male,Female}
 @attribute Age{Young, Middle, Senior}
