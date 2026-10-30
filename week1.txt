@@ -1,3 +1,20 @@
+ ===== WEEK 1: DATA PREPROCESSING =====
+ 
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week1.txt
+ Step 2: Filter → Choose → unsupervised → attribute → ReplaceMissingValues → Apply
+ Step 3: Filter → Choose → unsupervised → attribute → StringToNominal → click on it → set attributeRange to 3,7 → OK → Apply
+ Step 4: At bottom, set Class dropdown to "No class"
+ Step 5: Filter → Choose → unsupervised → attribute → ReplaceMissingValues → Apply (2nd time)
+ Step 6: Filter → Choose → unsupervised → attribute → Normalize → Apply
+ Step 7: Filter → Choose → unsupervised → attribute → Discretize → Apply
+ Step 8: Filter → Choose → unsupervised → instance → RemoveDuplicates → Apply
+
+ Note: String attributes (gender, result) have "?" missing values.
+       StringToNominal range 3,7 targets gender(3rd) and result(7th).
+       "No class" is set so filters apply equally to all attributes.
+       RemoveDuplicates is under "instance" not "attribute".
+
+
 @relation student 
 @attribute SID,numeric
 @attribute age,numeric
