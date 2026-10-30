@@ -1,3 +1,16 @@
+ ===== WEEK 4: CLASSIFICATION — DECISION TREES (ID3 & J48) =====
+
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week4.txt
+ Step 2: Click "Classify" tab
+ Step 3: Choose → classifiers → trees → Id3 → click Start
+ Step 4: Choose → classifiers → trees → J48 → click Start
+ Step 5: In "Result list" (left panel), right-click on the J48 result → click "Visualize tree"
+
+ Note: ID3 works only with nominal attributes (no missing values, no numeric).
+       J48 (C4.5) handles both numeric and nominal, plus missing values.
+       Class attribute is Performance (last attribute).
+
+
 @relation employee
 @attribute Age{Young, Middle, Senior}
 @attribute Dept{IT, HR, Manager, Salesman}
