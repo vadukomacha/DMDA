@@ -1,3 +1,15 @@
+ ===== WEEK 7: CLUSTERING — HIERARCHICAL CLUSTERER =====
+
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week7.txt
+ Step 2: Click "Cluster" tab
+ Step 3: Choose → HierarchicalClusterer → check "Store clusters for visualization" → click Start
+ Step 4: In "Result list" (left panel), right-click on HierarchicalClusterer result → click "Visualize tree"
+
+ Note: Make sure "Store clusters for visualization" is checked BEFORE clicking Start.
+       Output shows clustered instances and merge distances.
+       Visualize tree shows the dendrogram (hierarchical merge tree).
+
+
 @relation student
 @attribute Age {<=25,30-40,>40}
 @attribute Income {Low,Medium,High}
