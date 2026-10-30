@@ -1,11 +1,21 @@
-@relation contact-lenses
+ ===== WEEK 2: ASSOCIATION RULES — APRIORI =====
 
+ Step 1: Open Weka Explorer → Preprocess tab → Open file → select week2.txt
+ Step 2: Click "Associate" tab
+ Step 3: Choose → Apriori → click Start
+ Step 4: Read the generated association rules in the output panel
+ Step 5: (If needed) Click on "Apriori" text → change lowerBoundMinSupport & minMetric (confidence) → OK → Start again
+
+ Note: All attributes are already nominal, no preprocessing needed.
+       Rules show pattern like: antecedent ==> consequent  conf:(value)
+
+
+@relation contact-lenses
 @attribute age {young, pre-presbyopic, presbyopic}
 @attribute spectacle-prescrip {myope, hypermetrope}
 @attribute astigmatism {no, yes}
 @attribute tear-prod-rate {reduced, normal}
 @attribute contact-lenses {soft, hard, none}
-
 @data
 young,myope,no,reduced,none
 young,myope,no,normal,soft
