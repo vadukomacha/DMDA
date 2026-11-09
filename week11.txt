@@ -3,7 +3,9 @@ Normal Distribution
 i.DNROM
 x <- seq(-10, 10, by = 0.1)
 y <- dnorm(x, mean = 2.5, sd = 0.5)
+model=lm(y~x)
 plot(x, y, main = "Normal Distribution", xlab = "X", ylab = "Density", type = "l")
+abline(model,col="blue",lwd=2)
 
 ii.PNROM:
 x <- seq(-10, 10, by = 0.1)
