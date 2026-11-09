@@ -36,11 +36,10 @@ y <- pbinom(x, 51, 0.5)
 plot(x, y,main = "Cumulative Binomial Distribution",xlab = "Number of Successes",ylab = "Cumulative Probability",type = "s")
 
 iii.QBINOM
-x <- qbinom(0.25, 51, 1/2)
-print(x)
-plot(x)
+x=seq(0,1,by=0.02)
+y=qbinom(x,2.0,0.5)
+plot(x,y,main="Quantile Binomial Distribution",xlab="Number of Success",ylab="Quantile",type="s")
 
 IV. RBINOM
-x <- rbinom(8, 150, 0.4)
-print(x)
-plot(x)
+y=rbinom(50,10,0.5)
+hist(y,main="Random Binomial Distribution",xlab="values",col="blue")
